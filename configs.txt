@@ -1,0 +1,43 @@
+# ==================================================================================
+# Configuration File for MakeIcons v3.1
+# ==================================================================================
+# ==== Configurations =====
+# You may enter a different input icon name and extension.
+
+set input_Name=Icon
+set input_Extension=png
+
+# ==================================================================================
+# To add new sizes just append them into this list.
+# Add a positive integer number for icons that have the same width and height (Side x Side). Example: "45"
+# Add a combination of two positive integer numbers separated with an "x" for icons that differ width and height (Width x Height). Example "25x30"
+# Example
+# set icon_size_list=72 36 43 48 96 144 192 100x50 1x1 99 1920x1080
+
+set icon_size_list=72 36 43 48 96 144 192 100x50
+
+# ==================================================================================
+# ==== Copy Icons ====
+#  Usage: "copy [source_icon] [Destination_Dir] [File_Name]"
+#  [source_icon] = One of the values from square_list or rectangle_list.
+#  [Destination_Dir] = Path to destination folder.
+#  [File_Name] = File name to be renamed.
+
+# You may use variables surrounded with "!" or "%".
+
+set ResFolder=..\MyAndroidProyect\res
+copy	72		%ResFolder%\drawable			icon
+copy	72		%ResFolder%\drawable-hdpi		icon
+copy	43		%ResFolder%\drawable-hdpi		iconiab
+copy	36		!ResFolder!\drawable-ldpi		icon
+copy	48		!ResFolder!\drawable-mdpi		icon
+copy	96		!ResFolder!\drawable-xhdpi		icon
+copy	144		!ResFolder!\drawable-xxhdpi		icon
+copy	192		!ResFolder!\drawable-xxxhdpi	icon
+#copy	100x50	!ResFolder!\drawable-xxxhdpi	icon
+
+# =================================================================================================================
+# NOTE: For more info about nconvert.exe, under command prompt type "nconvert --help > help.txt" and read "help.txt"
+# NOTE: For more info about MakeIcons: Rogelio.Ambario@gmail.com
+# NOTE: Github Repository: https://github.com/RogelioAmbario/MakeIcons.git
+# =================================================================================================================

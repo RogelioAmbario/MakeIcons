@@ -1,0 +1,19 @@
+===========================
+=== MakeIcons Changelog ===
+===========================
+1.0 - 2014-08-30 - First release of MakeIcons.
+1.1 - 2015-10-01 - Replaced "goto" functions with "call:" subroutines.
+	- Changed order of functions to configure at the beginning.
+	- Improved error handling.
+2.0 - 2015-10-06 - Fixed text typo.
+3.0 - 2015-10-07 - Configuration file added "configs.txt".
+	- Manual configurations should be read from configuration file.
+	- Square and rectangle lists are now set in configuration file.
+	- Copy functions are set in configuration file.
+	- Configuration file supports comments.
+	- Error handling when an unidentified line is set in configuration file.
+3.1 - 2015-10-27 - Square and rectangle lists replaced by one single list in configuration file.
+	- Fixed MakeIcons version.
+	- Added version to configuration file.
+	- Added "changelog.txt".
+3.2 - 2015-12-10 - Created Github repositoy. Now its public.
